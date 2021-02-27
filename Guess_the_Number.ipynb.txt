@@ -1,0 +1,96 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Guess the Number.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ImXTgp5RLZoI",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "51c2286e-8b9f-48c3-bd47-1b6591c80472"
+      },
+      "source": [
+        "N=20\n",
+        "i=0\n",
+        "while(i<5):\n",
+        "  #The Number ranges between 10-20\n",
+        "  num1=int(input(\"Enter your Guess here:\"))\n",
+        "  if num1<N:\n",
+        "    print(\"you have Guessed less than the Given number try again\")\n",
+        "    i=i+1\n",
+        "    print(f\"You have {5-i} attent left\")\n",
+        "    continue\n",
+        "  elif num1>N:\n",
+        "    print(\"you have Guessed Greator than the Given number try again\")\n",
+        "    i=i+1\n",
+        "    print(f\"You have {5-i} attent left\")\n",
+        "  else:\n",
+        "    print(\"you Guessed right \\n Thank you \")\n",
+        "    break\n",
+        "if i>=5:\n",
+        "  print(\"Game Over\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter your Guess here:88\n",
+            "you have Guessed Greator than the Given number try again\n",
+            "You have 4 attent left\n",
+            "Enter your Guess here:88\n",
+            "you have Guessed Greator than the Given number try again\n",
+            "You have 3 attent left\n",
+            "Enter your Guess here:88\n",
+            "you have Guessed Greator than the Given number try again\n",
+            "You have 2 attent left\n",
+            "Enter your Guess here:88\n",
+            "you have Guessed Greator than the Given number try again\n",
+            "You have 1 attent left\n",
+            "Enter your Guess here:88\n",
+            "you have Guessed Greator than the Given number try again\n",
+            "You have 0 attent left\n",
+            "Game Over\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0mJ4uFUdeIiF"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NGR5Ip2LamNT"
+      },
+      "source": [
+        "21\r\n",
+        "2"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
